@@ -7,9 +7,9 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 
 # %%
-model = tf.keras.models.load_model('flightPathModel')
+model = tf.keras.models.load_model('flightPathModel.h5')
 
-with open('flightPathModel/columns.json') as f:
+with open('columns.json') as f:
     columns = json.load(f)
 
 st.title('🚀 Launch Path Prediction')
